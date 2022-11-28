@@ -33,12 +33,12 @@ class Clock extends React.Component {
     }
     random() {
         this.setState({
-            count: this.state.Math.random > 100
+            count:Math.floor(Math.random () * (100 - 1 + 1) + 1 ) 
         })
     }
     res() {
         this.setState({
-            count: this.state.count = 0
+            count: 0
         })
     }
 
